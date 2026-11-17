@@ -1,0 +1,6 @@
+packs/**/LOCK
+packs/**/LOG
+packs/**/LOG.old
+build/docs.json
+*.zip
+__pycache__/

@@ -1,0 +1,72 @@
+{
+  "id": "white-mage",
+  "title": "White Mage (Homebrew Class)",
+  "description": "Final Fantasy White Mage class for D&D 5e by ArchiverButcher, converted for the dnd5e system: class, four Orders, features, homebrew spells and the White Mage spell list.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "ArchiverButcher (homebrew)"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/white-mage.mjs"
+  ],
+  "packs": [
+    {
+      "name": "white-mage-items",
+      "label": "White Mage: Class, Features & Spells",
+      "path": "packs/white-mage-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "white-mage-journal",
+      "label": "White Mage: Spell List",
+      "path": "packs/white-mage-journal",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "White Mage",
+      "color": "#e8e4d8",
+      "packs": [
+        "white-mage-items",
+        "white-mage-journal"
+      ]
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "spellLists": [
+        "Compendium.white-mage.white-mage-journal.JournalEntry.ae98oWiJXKnRHwce.JournalEntryPage.UTNy59a8GOzDQkJs"
+      ]
+    }
+  },
+  "url": "https://github.com/Iron-Archivist/foundry-white-mage",
+  "manifest": "https://github.com/Iron-Archivist/foundry-white-mage/releases/latest/download/module.json",
+  "download": "https://github.com/Iron-Archivist/foundry-white-mage/releases/download/v1.0.0/white-mage.zip"
+}
